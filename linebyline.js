@@ -41,7 +41,7 @@ LineByLine.prototype._transform = function(data, encoding, cb) {
 };
 
 LineByLine.prototype._flush = function(cb) {
-	if (this.buffer.lenght > 0) {
+	if (this.buffer.length > 0) {
 		this.push(buffer, this.encoding);
 		this.line_number++;
 	}
